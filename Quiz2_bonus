@@ -1,0 +1,70 @@
+package Exercise;
+
+import java.util.Scanner;
+
+public class Bonus {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Scanner sc = new Scanner (System.in);
+		 
+        int salary;
+        int yearOfService;
+        int totalSalary;
+        double bonus;
+        double highestSalary;
+        double lowestSalary;
+        int age1, age2, age3;
+        
+        System.out.println("Please key in your salary:RM");
+        salary = sc.nextInt();
+        
+        System.out.println("Please key in your year of service:");
+        yearOfService = sc.nextInt();
+        
+        if(yearOfService >5) {
+        bonus = (salary*0.05);
+        System.out.println("Bonus : " +bonus);
+        }
+        else
+        System.out.println("Bonus : " +salary);
+        
+        highestSalary = salary*1.05;
+        lowestSalary = salary*1.00;
+        System.out.println("The highest salary is: " +highestSalary);
+        System.out.println("The lowest salary is : " +lowestSalary);
+        	
+        	System.out.println("Please key in the first employee age:");
+        	age1 = sc.nextInt();
+        	
+        	System.out.println("Please key in the second employee age:");
+        	age2 = sc.nextInt();
+        	
+        	System.out.println("Please key in the third employee age:");
+        	age3 = sc.nextInt();
+        	
+        	if(age1 > age2 && age1 > age3) {
+        		System.out.println("The highest age is: " +age1);
+        		if(age2 > age1 && age1> age3)
+        			System.out.println("The highest age is: " +age2);
+        			else 
+        				System.out.println("The highest age is: " +age3);
+        				
+        			}
+        	if(age1 < age2 && age1 < age3) {
+        		System.out.println("The lowest age is: " +age1);
+        		if(age2 < age1 && age1< age3)
+        			System.out.println("The lowest age is: " +age2);
+        			else 
+        				System.out.println("The lowest age is: " +age3);
+        				
+        			}
+        		}
+        	
+        	
+        	
+        	
+        
+	}
+
+
