@@ -27,7 +27,8 @@ public class Bonus {
         System.out.println("Bonus : " +bonus);
         }
         else
-        System.out.println("Bonus : " +salary);
+       	bonus = 0;
+        System.out.println("You don't get any bonus: " +bonus);
         
         highestSalary = salary*1.05;
         lowestSalary = salary*1.00;
